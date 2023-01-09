@@ -6,7 +6,7 @@ val handshake = arrayOf("wink", "double blink", "close your eyes", "jump")
 fun secret(num:Int): String
 {
     var slice = arrayOf<String>()
-    for (i in 0..handshake.size-1)
+    for (i in 0 until handshake.size)
     {
         var result:Int = num and (1 shl i)
         if (result != 0)
